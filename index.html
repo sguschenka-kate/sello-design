@@ -14,27 +14,27 @@
   <body>
     <main class="main-content">
       <header class="header">
-        <div class="container header-container">
+        <div class="container header__container">
           <!-- logo -->
           <a href="#" class="logo">
-            <img src="./img/logo.svg" alt="Sello Logo" />
+            <img src="./img/logo.svg" alt="Sello Logo" class="logo__img" />
           </a>
           <!-- ./logo -->
 
           <!-- nav -->
           <nav class="nav">
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a href="" class="nav-link">Home</a>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--light">Home</a>
               </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">Product</a>
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--light">Product</a>
               </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">Blog</a>
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--light">Blog</a>
               </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">Contact</a>
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--light">Contact</a>
               </li>
             </ul>
           </nav>
@@ -45,11 +45,51 @@
 
     <!-- footer -->
     <footer class="footer">
-      <div class="footer-top">
-        <div class="container">logo etc..</div>
+      <div class="footer__top">
+        <div class="container footer__container--top">
+          <div class="footer__column footer__column--large">
+            <!-- logo -->
+            <a href="#" class="logo">
+              <img src="./img/logo.svg" alt="Sello Logo" class="logo__img" />
+            </a>
+            <!-- ./logo -->
+
+            <!-- address -->
+            <address class="address">
+              <ul class="address__list">
+                <li class="address__item">
+                  <a
+                    href="https://www.google.com/maps/place/184+Main+Rd+E,+St+Albans+VIC+3021,+%D0%90%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D1%8F/@-37.7575498,144.7079744,12z/data=!4m5!3m4!1s0x6ad65fa6debeb781:0xe1d23f5d1759961e!8m2!3d-37.7456227!4d144.8137285"
+                    class="address__link"
+                  >
+                    184 Main Rd E, St Albans VIC 3021, Australia
+                  </a>
+                </li>
+                <li class="address__item">
+                  <a href="mailto:contact@company.com" class="address__link">
+                    contact@company.com
+                  </a>
+                </li>
+                <li class="address__item">
+                  <a href="tel:+0012233456" class="address__link">
+                    +001 2233 456
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <!-- ./address -->
+          </div>
+          <div class="footer__column">column 2</div>
+          <div class="footer__column">column 3</div>
+          <div class="footer__column">column 4</div>
+        </div>
       </div>
-      <div class="footer-bot">
-        <div class="container">copyrights</div>
+      <div class="footer__bot">
+        <div class="container footer__container--bot">
+          <span class="copyright">
+            Copyright © 2019 Sello all rights reserved. Powered by Designik
+          </span>
+        </div>
       </div>
     </footer>
     <!-- ./footer -->
