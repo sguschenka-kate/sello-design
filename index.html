@@ -25,22 +25,53 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#" class="nav__link nav__link--light">Home</a>
+                <a href="#" class="nav__link nav__link--active">Home</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link nav__link--light">Product</a>
+                <a href="#" class="nav__link">Product</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link nav__link--light">Blog</a>
+                <a href="#" class="nav__link">Blog</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link nav__link--light">Contact</a>
+                <a href="#" class="nav__link">Contact</a>
               </li>
             </ul>
           </nav>
           <!-- ./nav -->
         </div>
       </header>
+
+      <section class="section hero">
+        <div class="container hero__container">
+          <div class="hero__column hero__column--content">
+            <h1 class="hero__title">SALE OFF! UP TO 70%</h1>
+            <div class="hero__description">
+              <p class="hero__description--text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has
+              </p>
+              <p class="hero__description--text">
+                been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer
+              </p>
+              <p class="hero__description--text">
+                took a galley of type and scrambled it to make a type specimen
+                book.
+              </p>
+            </div>
+            <a href="#" class="hero__link">SHOP NOW</a>
+          </div>
+
+          <!-- <div class="hero__column">
+            <img
+              src="./img/hero__img.png"
+              aria-label="hidden"
+              class="hero__img"
+            />
+          </div> -->
+        </div>
+      </section>
     </main>
 
     <!-- footer -->
@@ -57,31 +88,135 @@
             <!-- address -->
             <address class="address">
               <ul class="address__list">
-                <li class="address__item">
+                <li class="address__list--item">
                   <a
                     href="https://www.google.com/maps/place/184+Main+Rd+E,+St+Albans+VIC+3021,+%D0%90%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D1%8F/@-37.7575498,144.7079744,12z/data=!4m5!3m4!1s0x6ad65fa6debeb781:0xe1d23f5d1759961e!8m2!3d-37.7456227!4d144.8137285"
-                    class="address__link"
+                    class="address__link address__link--location"
                   >
                     184 Main Rd E, St Albans VIC 3021, Australia
                   </a>
                 </li>
-                <li class="address__item">
-                  <a href="mailto:contact@company.com" class="address__link">
+                <li class="address__list--item">
+                  <a
+                    href="mailto:contact@company.com"
+                    class="address__link address__link--email"
+                  >
                     contact@company.com
                   </a>
                 </li>
-                <li class="address__item">
-                  <a href="tel:+0012233456" class="address__link">
+                <li class="address__list--item">
+                  <a
+                    href="tel:+0012233456"
+                    class="address__link address__link--phone"
+                  >
                     +001 2233 456
                   </a>
                 </li>
               </ul>
             </address>
             <!-- ./address -->
+
+            <!-- social media -->
+            <div class="social-media">
+              <ul class="social-media__list social-media__container">
+                <li class="social-media__list--item">
+                  <a href="#" class="social-media__link">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="social-media__list--item">
+                  <a href="#" class="social-media__link">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="social-media__list--item">
+                  <a href="#" class="social-media__link">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li class="social-media__list--item">
+                  <a href="#" class="social-media__link">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="social-media__list--item">
+                  <a href="#" class="social-media__link">
+                    <i class="fab fa-pinterest-p"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- ./social media -->
           </div>
-          <div class="footer__column">column 2</div>
-          <div class="footer__column">column 3</div>
-          <div class="footer__column">column 4</div>
+          <div class="footer__column footer__column--small">
+            <h3 class="footer__column--title">Information</h3>
+
+            <ul class="footer__list">
+              <li class="footer__list--item">
+                <a href="#" class="footer__link">About Us</a>
+              </li>
+              <li class="footer__list--item">
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+              <li class="footer__list--item">
+                <a href="#" class="footer__link">Terms & Conditions</a>
+              </li>
+              <li class="footer__list--item">
+                <a href="#" class="footer__link">Returns & Exchanges</a>
+              </li>
+              <li class="footer__list--item">
+                <a href="#" class="footer__link">Shipping & Delivery</a>
+              </li>
+              <li class="footer__list--item">
+                <a href="#" class="footer__link">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column footer__column--small">
+            <h3 class="footer__column--title">Quick links</h3>
+
+            <ul class="footer__list">
+              <li class="footer__list--item">
+                <a href="#" class="footer__link">Store Location</a>
+              </li>
+              <li class="footer__list--item">
+                <a href="#" class="footer__link">My Account</a>
+              </li>
+              <li class="footer__list--item">
+                <a href="#" class="footer__link">Orders Tracking</a>
+              </li>
+              <li class="footer__list--item">
+                <a href="#" class="footer__link">Size Guide</a>
+              </li>
+              <li class="footer__list--item">
+                <a href="#" class="footer__link">Faqs</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column footer__column--small">
+            <h3 class="footer__column--title">Payment</h3>
+
+            <ul class="footer__list">
+              <li class="footer__list--item">
+                <a href="#" class="footer__link">Account</a>
+              </li>
+              <li class="footer__list--item">
+                <a href="#" class="footer__link">Free Shipping</a>
+              </li>
+              <li class="footer__list--item">
+                <a href="#" class="footer__link">Support 24/7</a>
+              </li>
+              <li class="footer__list--item">
+                <a href="#" class="footer__link">30 Days Product Returns</a>
+              </li>
+              <li class="footer__list--item">
+                <a href="#" class="footer__link">100% Payment Secure</a>
+              </li>
+              <li class="footer__list--item">
+                <a href="#" class="footer__link">Supported All Cards</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="footer__bot">
@@ -93,5 +228,9 @@
       </div>
     </footer>
     <!-- ./footer -->
+    <script
+      src="https://kit.fontawesome.com/1ab0995688.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
