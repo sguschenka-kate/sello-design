@@ -44,6 +44,13 @@ a:focus {
   box-shadow: 0 0 0 1px #c7c7c7;
 }
 
+button {
+  outline: none;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
 .link-button {
   color: #222;
   display: block;
@@ -146,10 +153,13 @@ a:focus {
   background: #fff;
 }
 
-.products__list {
+.card__list {
   display: flex;
   flex-wrap: wrap;
   gap: 12px 15px;
+}
+
+.products__list {
   margin-top: 24px;
 }
 
@@ -189,6 +199,11 @@ a:focus {
   padding: 7px 0 8px 10px;
 }
 
+.card__price--old {
+  color: #c7c7c7;
+  font-size: 5px;
+}
+
 /* .card__img {
   position: relative;
 } */
@@ -208,12 +223,8 @@ a:focus {
   content: "T-Shirt";
 } */
 
-/**
+/* Section Recommendations / Banner */
 
-  Section Recommendations
-  Banner
-
-*/
 .recommendations {
   margin-top: 70px;
 }
@@ -258,11 +269,115 @@ a:focus {
   left: 22px;
 }
 
-/**
+/* section - featured  */
 
-footer
+.featured {
+  margin-top: 77px;
+}
 
-*/
+.card__options--featured {
+  padding: 5px 4px 0;
+  position: relative;
+}
+
+.grey-line::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 2px;
+  background: #f8f8f8;
+}
+
+/* icon-buttons */
+
+.button--icon {
+  padding: 5px 6px 9px;
+  align-items: center;
+}
+
+.card__options--cart-button {
+  margin-left: auto;
+}
+
+.button__icon {
+  font-size: 5px;
+}
+
+.button__content--icon {
+  font-size: 5px;
+  font-weight: 300;
+  color: #222;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+
+/* section - subscription */
+
+.subscription {
+  margin-top: 75px;
+}
+
+.subscription__container {
+  background: url(../img/subscription-background.jpg) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 31px 0 27px;
+}
+
+.subscription__content {
+  padding: 0 180px;
+}
+
+.subscription__title {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.41;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.subscription__title--bold {
+  font-weight: 400;
+}
+
+.subscription__description {
+  font-weight: 300;
+  font-size: 7px;
+  color: #222;
+  line-height: 1.71;
+}
+
+.subscription__actions {
+  margin-top: 25px;
+}
+
+.subscription__input {
+  width: 175px;
+  padding: 10px 14px;
+  font-size: 7px;
+  font-weight: 300;
+  border: none;
+  color: #c7c7c7;
+}
+
+.button__subscribe {
+  background: #222;
+  color: #fff;
+  font-size: 7px;
+  font-weight: 300;
+  display: inline-block;
+  padding: 10px 16px 10px 14px;
+}
+
+.button__content--subscribe {
+  margin-left: 5px;
+}
+
+/* footer */
 
 .footer__container--top {
   display: flex;
@@ -298,8 +413,13 @@ footer
   margin-top: 27px;
 }
 
-.address__list--item:not(:first-child) {
+.address__list--item {
   margin-top: 10px;
+  position: relative;
+}
+
+.address__list--item:first-child {
+  margin-top: 0;
 }
 
 .address__link {
@@ -311,30 +431,12 @@ footer
   color: #222;
   display: block;
   width: 100%;
-  position: relative;
 }
 
-.address__link::before {
-  content: "";
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  background-size: contain;
+.address__link--icon {
+  font-size: 10px;
   position: absolute;
   left: -25px;
-}
-
-.address__link--location::before {
-  background: url(../img/location_on-black-18dp.svg) center center no-repeat;
-}
-
-.address__link--email::before {
-  background: url(../img/local_post_office-black-18dp.svg) center center
-    no-repeat;
-}
-
-.address__link--phone::before {
-  background: url(../img/call-black-18dp.svg) center center no-repeat;
 }
 
 /* social media */
@@ -348,7 +450,7 @@ footer
 
 .social-media__link {
   color: #222;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 /* footer columns 2,3,4 */
