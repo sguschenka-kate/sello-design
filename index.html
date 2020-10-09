@@ -23,18 +23,20 @@
 
           <!-- nav -->
           <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#" class="nav__link nav__link--active">Home</a>
+            <ul class="nav__list row">
+              <li class="nav__item nav__item--main">
+                <a href="#" class="nav__link nav__link--main nav__link--active"
+                  >Home</a
+                >
               </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Product</a>
+              <li class="nav__item nav__item--main">
+                <a href="#" class="nav__link nav__link--main">Product</a>
               </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Blog</a>
+              <li class="nav__item nav__item--main">
+                <a href="#" class="nav__link nav__link--main">Blog</a>
               </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Contact</a>
+              <li class="nav__item nav__item--main">
+                <a href="#" class="nav__link nav__link--main">Contact</a>
               </li>
             </ul>
           </nav>
@@ -43,8 +45,8 @@
       </header>
 
       <section class="section hero">
-        <div class="container hero__container">
-          <div class="hero__column hero__column--content">
+        <div class="container row">
+          <div class="col col-70 hero__column--content">
             <h1 class="hero__title">SALE OFF! UP TO 70%</h1>
             <div class="hero__description">
               <p class="hero__description--text">
@@ -60,7 +62,7 @@
                 book.
               </p>
             </div>
-            <a href="#" class="hero__link">SHOP NOW</a>
+            <a href="#" class="link-button hero__link">Shop now</a>
           </div>
 
           <!-- <div class="hero__column">
@@ -70,6 +72,140 @@
               class="hero__img"
             />
           </div> -->
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="container">
+          <nav class="nav nav--filter row">
+            <ul class="nav__list row">
+              <li class="nav__item nav__item--filter">
+                <a
+                  href="#"
+                  class="nav__link nav__link--filter nav__link--active"
+                  >T-Shirt</a
+                >
+              </li>
+              <li class="nav__item nav__item--filter">
+                <a href="#" class="nav__link nav__link--filter">Pants</a>
+              </li>
+              <li class="nav__item nav__item--filter">
+                <a href="#" class="nav__link nav__link--filter">Shoe</a>
+              </li>
+              <li class="nav__item nav__item--filter">
+                <a href="#" class="nav__link nav__link--filter">Jacket</a>
+              </li>
+              <li class="nav__item nav__item--filter">
+                <a href="#" class="nav__link nav__link--filter">Fashion</a>
+              </li>
+            </ul>
+
+            <a href="#" class="link-button products__nav--link">All products</a>
+          </nav>
+
+          <ul class="products__list">
+            <li class="products__item">
+              <div class="card">
+                <img
+                  src="./img/product-1.jpg"
+                  alt="Cuffed Beanie T-Shirt"
+                  class="card__img"
+                />
+                <h3 class="card__title">Cuffed Beanie</h3>
+                <div class="card__price">$10.00</div>
+              </div>
+            </li>
+
+            <li class="products__item">
+              <div class="card">
+                <img
+                  src="./img/product-2.jpg"
+                  alt="Grey Beanie Hat"
+                  class="card__img"
+                />
+                <h3 class="card__title">Grey Beanie</h3>
+                <div class="card__price">$15.00</div>
+              </div>
+            </li>
+
+            <li class="products__item">
+              <div class="card">
+                <img
+                  src="./img/product-3.jpg"
+                  alt="Calvin Klein Sweatpants"
+                  class="card__img"
+                />
+                <h3 class="card__title">Calvin Klein Sweatpants</h3>
+                <div class="card__price">$36.00</div>
+              </div>
+            </li>
+
+            <li class="products__item">
+              <div class="card">
+                <img
+                  src="./img/product-4.jpg"
+                  alt="Pink Leather Watch T-Shirt"
+                  class="card__img"
+                />
+                <h3 class="card__title">Pink Leather Watch</h3>
+                <div class="card__price">$36.00</div>
+              </div>
+            </li>
+
+            <li class="products__item">
+              <div class="card">
+                <img
+                  src="./img/product-5.jpg"
+                  alt="Cyan Boheme Pant"
+                  class="card__img"
+                />
+                <h3 class="card__title">Cyan Boheme</h3>
+                <div class="card__price">$36.00</div>
+              </div>
+            </li>
+
+            <li class="products__item">
+              <div class="card">
+                <img
+                  src="./img/product-6.jpg"
+                  alt="Woleen Tee Shirt"
+                  class="card__img"
+                />
+                <h3 class="card__title">Woleen Tee</h3>
+                <div class="card__price">$36.00</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="recommendations">
+        <div class="container row recommendations__container">
+          <div class="banner">
+            <img
+              src="./img/banner1.jpg"
+              alt="Summer sale banner"
+              class="banner__img"
+            />
+            <div class="banner__content banner__content--first">
+              <h2 class="banner__title">Summer sale</h2>
+              <p class="banner__description">Upto 70% off now</p>
+              <a href="#" class="link-button banner__link">Shop now</a>
+            </div>
+          </div>
+
+          <div class="banner">
+            <img
+              src="./img/banner2.jpg"
+              alt="Summer sale banner"
+              class="banner__img"
+            />
+            <div class="banner__content banner__content--second">
+              <h2 class="banner__title">New collection</h2>
+              <p class="banner__description">Trending T-Shirt</p>
+              <a href="#" class="link-button banner__link">Shop now</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>

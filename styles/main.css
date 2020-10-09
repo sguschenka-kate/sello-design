@@ -28,6 +28,10 @@ ul {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 p,
 h1,
 h2,
@@ -38,6 +42,27 @@ h3 {
 a:focus {
   outline: none;
   box-shadow: 0 0 0 1px #c7c7c7;
+}
+
+.link-button {
+  color: #222;
+  display: block;
+  text-transform: uppercase;
+  font-size: 9px;
+}
+
+/* Grid system */
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex-grow: 1;
+}
+
+.col-70 {
+  max-width: 70%;
 }
 
 /* header */
@@ -60,21 +85,10 @@ a:focus {
   max-width: 90px;
 }
 
-/* navigation */
-
-.nav__list {
-  display: flex;
-}
-
-.nav__item:not(:first-child) {
-  margin-left: 15px;
-}
+/* navigation (common) */
 
 .nav__link {
-  text-decoration: none;
   font-weight: 300;
-  font-size: 13px;
-  line-height: 1.38;
   color: #c7c7c7;
 }
 
@@ -83,23 +97,22 @@ a:focus {
   text-decoration: underline;
 }
 
-.nav__link--dark {
-  color: #2c2c2c;
+/* main - navigation */
+
+.nav__item--main:not(:first-child) {
+  margin-left: 15px;
 }
 
-/* 1st section - hero */
+.nav__link--main {
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+/* section - hero */
 
 .hero {
   background: #efefef;
   padding: 93px 0 133px 0;
-}
-
-.hero__container {
-  display: flex;
-}
-
-.hero__column--content {
-  width: 70%;
 }
 
 .hero__title {
@@ -118,9 +131,6 @@ a:focus {
 }
 
 .hero__link {
-  text-decoration: none;
-  color: #222;
-  display: block;
   margin-top: 40px;
 }
 
@@ -129,7 +139,130 @@ a:focus {
   top: 0;
 } */
 
-/* footer */
+/* section - products */
+
+.products {
+  padding-top: 72px;
+  background: #fff;
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 15px;
+  margin-top: 24px;
+}
+
+/* navigation - filter */
+
+.nav--filter {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__item--filter:not(:first-child) {
+  margin-left: 25px;
+}
+
+.nav__link--filter {
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+/* Card */
+
+.card {
+  max-width: 173px;
+}
+
+.card__title {
+  font-weight: 400px;
+  font-size: 12px;
+  color: #222;
+  padding: 13px 0 0 10px;
+}
+
+.card__price {
+  font-weight: 300;
+  font-size: 7px;
+  color: #222;
+  padding: 7px 0 8px 10px;
+}
+
+/* .card__img {
+  position: relative;
+} */
+
+/* .card__type::before {
+  display: block;
+  width: 35px;
+  height: 15px;
+  background: #fff;
+  color: #222;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.card__type--tshirt::before {
+  content: "T-Shirt";
+} */
+
+/**
+
+  Section Recommendations
+  Banner
+
+*/
+.recommendations {
+  margin-top: 70px;
+}
+
+.recommendations__container {
+  gap: 0 15px;
+}
+
+.banner {
+  position: relative;
+  max-width: 269px;
+}
+
+.banner__content {
+  position: absolute;
+  top: 50px;
+}
+
+.banner__title {
+  font-weight: 400;
+  font-size: 8px;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.banner__description {
+  font-weight: 600;
+  font-size: 12px;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.banner__link {
+  margin-top: 20px;
+}
+
+.banner__content--first {
+  right: 22px;
+}
+
+.banner__content--second {
+  left: 22px;
+}
+
+/**
+
+footer
+
+*/
 
 .footer__container--top {
   display: flex;
@@ -172,7 +305,7 @@ a:focus {
 .address__link {
   text-decoration: none;
   font-weight: 300;
-  font-size: 10px;
+  font-size: 8px;
   line-height: 1.38;
   font-style: normal;
   color: #222;
@@ -221,7 +354,7 @@ a:focus {
 /* footer columns 2,3,4 */
 
 .footer__column--title {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   text-decoration: underline;
   text-transform: uppercase;
@@ -237,9 +370,8 @@ a:focus {
 }
 
 .footer__link {
-  font-size: 10px;
+  font-size: 8px;
   font-weight: 300;
-  text-decoration: none;
   color: #222222;
 }
 
@@ -255,6 +387,6 @@ a:focus {
 }
 
 .copyright {
-  font-size: 12px;
+  font-size: 8px;
   font-weight: 300;
 }
