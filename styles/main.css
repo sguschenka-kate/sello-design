@@ -49,6 +49,7 @@ button {
   padding: 0;
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 .link-button {
@@ -56,6 +57,7 @@ button {
   display: block;
   text-transform: uppercase;
   font-size: 9px;
+  font-weight: 300;
 }
 
 /* Grid system */
@@ -93,6 +95,10 @@ button {
 }
 
 /* navigation (common) */
+
+.nav__list {
+  display: flex;
+}
 
 .nav__link {
   font-weight: 300;
@@ -153,19 +159,15 @@ button {
   background: #fff;
 }
 
-.card__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px 15px;
-}
-
 .products__list {
   margin-top: 24px;
+  gap: 12px 15px;
 }
 
 /* navigation - filter */
 
 .nav--filter {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -185,6 +187,15 @@ button {
   max-width: 173px;
 }
 
+.card--featured {
+  border: 0.5px solid #f4f4f4;
+}
+
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card__title {
   font-weight: 400px;
   font-size: 12px;
@@ -202,6 +213,12 @@ button {
 .card__price--old {
   color: #c7c7c7;
   font-size: 5px;
+}
+
+.card__description {
+  font-size: 8px;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 /* .card__img {
@@ -275,9 +292,14 @@ button {
   margin-top: 77px;
 }
 
+.featured__list {
+  gap: 12px 12px;
+}
+
 .card__options--featured {
   padding: 5px 4px 0;
   position: relative;
+  display: flex;
 }
 
 .grey-line::before {
@@ -299,15 +321,24 @@ button {
   align-items: center;
 }
 
-.card__options--cart-button {
+.button--with-icon {
+  background: #222;
+  color: #fff;
+  font-size: 7px;
+  font-weight: 300;
+  display: inline-block;
+  padding: 10px 16px 10px 14px;
+}
+
+.card__options--cart-btn {
   margin-left: auto;
 }
 
-.button__icon {
+.button--icon-image {
   font-size: 5px;
 }
 
-.button__content--icon {
+.button--icon-content {
   font-size: 5px;
   font-weight: 300;
   color: #222;
@@ -364,20 +395,110 @@ button {
   color: #c7c7c7;
 }
 
-.button__subscribe {
-  background: #222;
-  color: #fff;
-  font-size: 7px;
-  font-weight: 300;
-  display: inline-block;
-  padding: 10px 16px 10px 14px;
+.subscription__btn {
+  margin-left: 15px;
 }
 
-.button__content--subscribe {
+.subscription__btn--content {
   margin-left: 5px;
 }
 
+/* articles */
+
+.articles {
+  margin-top: 74px;
+}
+
+.articles__list {
+  gap: 12px 15px;
+}
+
+.articles__title {
+  padding: 0;
+  margin-top: 15px;
+  font-size: 9px;
+}
+
+.articles__description {
+  margin-top: 10px;
+}
+
+.articles__link {
+  margin-top: 24px;
+}
+
+/* instagram */
+
+.instagram {
+  margin-top: 80px;
+}
+
+.instagram__container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram__btn {
+  padding: 12px 30px;
+  font-size: 9.5px;
+  font-weight: 300;
+  line-height: 1.42;
+  position: absolute;
+  background: rgb(34, 34, 34, 0.55);
+}
+
+.instagram__btn--content {
+  margin-left: 7px;
+}
+
+/* categories */
+
+.categories {
+  margin-top: 78px;
+}
+
+.categories__list--large {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.categories__list--small {
+  margin-top: 17px;
+  display: flex;
+}
+
+.categories__item--big {
+  min-width: 16%;
+}
+
+.categories__title {
+  font-size: 15px;
+  font-weight: 400;
+  color: #222;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.categories__link:not(:first-child) {
+  margin-top: 6px;
+}
+
+.categories__link {
+  font-size: 8px;
+  font-weight: 300;
+  color: #222;
+  line-height: 1.5;
+  display: block;
+}
+
 /* footer */
+
+.footer {
+  margin-top: 74px;
+}
 
 .footer__container--top {
   display: flex;
@@ -396,13 +517,15 @@ button {
   padding: 30px 0;
 }
 
-.footer__column--large {
-  padding-right: 16px;
-  width: 27%;
+.footer__column {
+  min-width: 25%;
 }
 
-.footer__column--small {
-  width: 23%;
+.footer__column--address {
+  padding-right: 16px;
+}
+
+.footer__column--other {
   padding-top: 20px;
 }
 
@@ -410,7 +533,7 @@ button {
 
 .address__list {
   padding-left: 25px;
-  margin-top: 27px;
+  margin-top: 20px;
 }
 
 .address__list--item {
@@ -464,11 +587,7 @@ button {
 }
 
 .footer__list {
-  margin-top: 25px;
-}
-
-.footer__list--item:not(:first-child) {
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 .footer__link {
