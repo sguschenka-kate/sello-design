@@ -1,0 +1,38 @@
+.categories {
+  margin-top: 78px;
+}
+
+.categories__list--large {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.categories__list--small {
+  margin-top: 17px;
+  display: flex;
+}
+
+.categories__item--big {
+  min-width: 16%;
+}
+
+.categories__title {
+  font-size: 15px;
+  font-weight: 400;
+  color: #222;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.categories__link:not(:first-child) {
+  margin-top: 6px;
+}
+
+.categories__link {
+  font-size: 8px;
+  font-weight: 300;
+  color: #222;
+  line-height: 1.5;
+  display: block;
+}

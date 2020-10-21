@@ -1,0 +1,44 @@
+.recommendations {
+  margin-top: 70px;
+}
+
+.recommendations__container {
+  gap: 0 19px; /*was 15px*/
+}
+
+.banner {
+  position: relative;
+  max-width: 415px; /*was 269px*/
+}
+
+.banner__content {
+  position: absolute;
+  top: 50px;
+}
+
+.banner__title {
+  @include make-font(15, 24); /*was 8px*/
+  font-weight: 400;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.banner__description {
+  @include make-font(19, 34); /*was 12px*/
+  font-weight: 600;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.banner__link {
+  @include link-button;
+  margin-top: 20px;
+}
+
+.banner__content--first {
+  right: 22px;
+}
+
+.banner__content--second {
+  left: 22px;
+}

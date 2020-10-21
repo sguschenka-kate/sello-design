@@ -1,0 +1,27 @@
+{
+  "name": "Task4-Sello-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sguschenka-kate/sello-design.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sguschenka-kate/sello-design/issues"
+  },
+  "homepage": "https://github.com/sguschenka-kate/sello-design#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.27.0"
+  },
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
+}

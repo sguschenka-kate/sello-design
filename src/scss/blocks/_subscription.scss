@@ -1,0 +1,71 @@
+.subscription {
+  margin-top: 75px;
+}
+
+.subscription__container {
+  background: #efefef;
+  text-align: center;
+  padding: 31px 0 27px;
+}
+
+.subscription__container::before {
+  content: "";
+  background: url(../../img/girl1.png) center center no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+.subscription__container::after {
+  content: "";
+  background: url(../../img/girl2.png) center center no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+.subscription__content {
+  padding: 0 250px;
+}
+
+.subscription__title {
+  @include make-font(17, 29); /*was 12px*/
+  font-weight: 300;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.subscription__title--bold {
+  font-weight: 400;
+}
+
+.subscription__description {
+  @include make-font(12, 22); /*was 7px*/
+  font-weight: 300;
+  color: #222;
+}
+
+.subscription__actions {
+  margin-top: 25px;
+}
+
+.subscription__input {
+  @include make-font(14, 22); /*was 7px*/
+  width: 175px;
+  padding: 10px 14px;
+  font-weight: 300;
+  border: none;
+  color: #c7c7c7;
+}
+
+.subscription__btn {
+  margin-left: 15px;
+}
+
+.subscription__btn--content {
+  margin-left: 5px;
+}

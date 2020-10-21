@@ -1,0 +1,29 @@
+.featured {
+  margin-top: 77px;
+}
+
+.featured__list {
+  gap: 12px 12px;
+}
+
+.card--featured {
+  border: 0.5px solid #f4f4f4;
+}
+
+.card__options--featured {
+  padding: 5px 4px 0;
+  position: relative;
+  display: flex;
+}
+
+.grey-line::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 2px;
+  background: #f8f8f8;
+}
