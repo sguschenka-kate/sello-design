@@ -18,11 +18,10 @@
 }
 
 .categories__title {
-  font-size: 15px;
+  @include make-font(22, 33); //was 15
   font-weight: 400;
   color: #222;
   text-transform: uppercase;
-  line-height: 1.3;
 }
 
 .categories__link:not(:first-child) {
@@ -30,9 +29,8 @@
 }
 
 .categories__link {
-  font-size: 8px;
+  @include make-font(15, 25); //was 8
   font-weight: 300;
   color: #222;
-  line-height: 1.5;
   display: block;
 }

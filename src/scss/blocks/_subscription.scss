@@ -5,27 +5,32 @@
 .subscription__container {
   background: #efefef;
   text-align: center;
-  padding: 31px 0 27px;
+  padding: 36px 0 30px; //was 34 0 28
+  position: relative;
 }
 
 .subscription__container::before {
   content: "";
-  background: url(../../img/girl1.png) center center no-repeat;
+  background: url(../img/girl1.png) center center no-repeat;
   background-size: contain;
   display: block;
   position: absolute;
   width: 200px;
   height: 200px;
+  left: 15px;
+  top: 0;
 }
 
 .subscription__container::after {
   content: "";
-  background: url(../../img/girl2.png) center center no-repeat;
+  background: url(../img/girl2.png) center center no-repeat;
   background-size: contain;
   display: block;
   position: absolute;
   width: 200px;
   height: 200px;
+  right: 15px;
+  top: 0;
 }
 
 .subscription__content {
@@ -55,7 +60,7 @@
 
 .subscription__input {
   @include make-font(14, 22); /*was 7px*/
-  width: 175px;
+  width: 275px; // was 175px
   padding: 10px 14px;
   font-weight: 300;
   border: none;

@@ -7,9 +7,9 @@
 }
 
 .articles__title {
+  @include make-font(16, 27); //was 9px
   padding: 0;
   margin-top: 15px;
-  font-size: 9px;
 }
 
 .articles__description {
@@ -17,5 +17,6 @@
 }
 
 .articles__link {
+  @include link-button;
   margin-top: 24px;
 }

@@ -27,7 +27,7 @@
 }
 
 .card__description {
-  @include make-font(13, 18); /*was 8px*/
+  @include make-font(13, 23); /*was 8px*/
   font-weight: 300;
 }
 

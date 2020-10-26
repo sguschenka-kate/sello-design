@@ -48,10 +48,9 @@
 }
 
 .address__link {
+  @include make-font(15, 25); //was 8px
   text-decoration: none;
   font-weight: 300;
-  font-size: 8px;
-  line-height: 1.38;
   font-style: normal;
   color: #222;
   display: block;
@@ -59,7 +58,7 @@
 }
 
 .address__link--icon {
-  font-size: 10px;
+  @include make-font(17, 28); //was 10px
   position: absolute;
   left: -25px;
 }
@@ -74,14 +73,16 @@
 }
 
 .social-media__link {
+  @include make-font(17, 28); //was 10px
+
   color: #222;
-  font-size: 10px;
 }
 
 /* footer columns 2,3,4 */
 
 .footer__column--title {
-  font-size: 12px;
+  @include make-font(19, 30); //was 12px
+
   font-weight: 400;
   text-decoration: underline;
   text-transform: uppercase;
@@ -93,7 +94,8 @@
 }
 
 .footer__link {
-  font-size: 8px;
+  @include make-font(15, 25); //was 8px
+
   font-weight: 300;
   color: #222222;
 }
@@ -110,6 +112,7 @@
 }
 
 .copyright {
-  font-size: 8px;
+  @include make-font(15, 25); //was 8px
+
   font-weight: 300;
 }
