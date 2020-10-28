@@ -1,20 +1,45 @@
 .categories {
   margin-top: 78px;
+
+  @include large {
+    margin-top: 40px;
+  }
 }
 
 .categories__list--large {
   display: flex;
   justify-content: space-between;
   width: 100%;
+
+  @include optimal {
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px 0;
+  }
 }
 
 .categories__list--small {
   margin-top: 17px;
   display: flex;
+
+  @include optimal {
+    justify-content: center;
+  }
 }
 
 .categories__item--big {
   min-width: 16%;
+
+  @include optimal {
+    min-width: 33%;
+  }
+  @include small {
+    min-width: 40%;
+  }
+
+  @include smallest {
+    min-width: 100%;
+  }
 }
 
 .categories__title {

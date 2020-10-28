@@ -1,7 +1,7 @@
 @import "../../node_modules/normalize-scss/sass/normalize.scss";
-@import "./blocks/base.scss";
+@import "./blocks/global.scss";
+@import "./mixins.scss";
 @import "./blocks/grid.scss";
-@import "./blocks/mixins.scss";
 @import "./blocks/buttons.scss";
 @import "./blocks/card.scss";
 @import "./blocks/navigation.scss";

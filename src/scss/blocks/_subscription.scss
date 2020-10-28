@@ -1,12 +1,21 @@
 .subscription {
   margin-top: 75px;
+
+  @include large {
+    margin-top: 40px;
+  }
 }
 
 .subscription__container {
   background: #efefef;
   text-align: center;
-  padding: 36px 0 30px; //was 34 0 28
+  padding: 28px 0; //was 34 0 28
   position: relative;
+
+  @include large {
+    padding: 28px 15px;
+    z-index: -1;
+  }
 }
 
 .subscription__container::before {
@@ -18,7 +27,11 @@
   width: 200px;
   height: 200px;
   left: 15px;
-  top: 0;
+  bottom: 0;
+
+  @include large {
+    display: none;
+  }
 }
 
 .subscription__container::after {
@@ -30,15 +43,23 @@
   width: 200px;
   height: 200px;
   right: 15px;
-  top: 0;
+  bottom: 0;
+
+  @include large {
+    display: none;
+  }
 }
 
 .subscription__content {
   padding: 0 250px;
+
+  @include large {
+    padding: 0;
+  }
 }
 
 .subscription__title {
-  @include make-font(17, 29); /*was 12px*/
+  @include make-font(19, 30); /*was 12px*/
   font-weight: 300;
   color: #222;
   text-transform: uppercase;
@@ -49,7 +70,7 @@
 }
 
 .subscription__description {
-  @include make-font(12, 22); /*was 7px*/
+  @include make-font(14, 25); /*was 7px*/
   font-weight: 300;
   color: #222;
 }
@@ -65,12 +86,28 @@
   font-weight: 300;
   border: none;
   color: #c7c7c7;
+
+  @include small {
+    width: 175px;
+  }
+
+  @include smallest {
+    width: 150px;
+  }
 }
 
 .subscription__btn {
   margin-left: 15px;
+
+  @media screen and (max-width: 480px) {
+    margin-left: -2px;
+  }
 }
 
 .subscription__btn--content {
   margin-left: 5px;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 }

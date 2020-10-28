@@ -1,5 +1,9 @@
 .instagram {
   margin-top: 80px;
+
+  @include large {
+    margin-top: 40px;
+  }
 }
 
 .instagram__container {
@@ -13,6 +17,10 @@
 .instagram__image-wrapper {
   width: 12.5%;
   height: 165px;
+
+  @include large {
+    width: 100%;
+  }
 }
 
 .instagram__image {
@@ -21,12 +29,30 @@
   object-fit: cover;
 }
 
-.instagram__btn {
+.instagram__image--medium {
+  @include medium {
+    display: none;
+  }
+}
+
+.instagram__image--large {
+  @include large {
+    display: none;
+  }
+}
+
+.instagram__link {
   @include make-font(16.5, 27); //was 9.5px
   padding: 20px 50px; //was 12px 30px
   font-weight: 300;
   position: absolute;
   background: rgb(34, 34, 34, 0.55);
+  color: #fff;
+  display: inline-block;
+
+  @include smallest {
+    padding: 10px 20px;
+  }
 }
 
 .instagram__btn--content {

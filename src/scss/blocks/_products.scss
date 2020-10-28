@@ -1,6 +1,10 @@
 .products {
-  padding-top: 72px;
+  margin-top: 72px;
   background: #fff;
+
+  @include large {
+    margin-top: 40px;
+  }
 }
 
 .products__list {
@@ -18,10 +22,43 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 879px) {
+    padding: 0 100px;
+  }
+
+  @include optimal {
+    padding: 0 40px;
+  }
+
+  @media screen and (max-width: 589px) {
+    padding: 0 80px;
+  }
+
+  @include small {
+    padding: 0 40px;
+  }
+
+  @include smallest {
+    padding: 0;
+  }
+}
+
+.nav__list--filter {
+  @include large {
+    display: block;
+    overflow: hidden;
+    width: 80px;
+    height: 25px;
+  }
 }
 
 .nav__item--filter:not(:first-child) {
   margin-left: 25px;
+
+  @include large {
+    margin-left: 0;
+  }
 }
 
 .nav__link--filter {

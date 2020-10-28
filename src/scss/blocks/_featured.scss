@@ -1,9 +1,13 @@
 .featured {
   margin-top: 77px;
+
+  @include large {
+    margin-top: 40px;
+  }
 }
 
 .featured__list {
-  gap: 12px 12px;
+  gap: 17px 17px;
 }
 
 .card--featured {
@@ -14,6 +18,10 @@
   padding: 5px 4px 0;
   position: relative;
   display: flex;
+
+  @include large {
+    z-index: -1;
+  }
 }
 
 .grey-line::before {

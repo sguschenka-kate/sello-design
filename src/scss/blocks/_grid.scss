@@ -12,7 +12,17 @@
   max-width: 70%;
 }
 
+.col-m-100 {
+  @include large {
+    max-width: 100%;
+  }
+}
+
 .container {
-  width: 850px; /* was 550px */
+  max-width: 850px; /* was 550px */
   margin: 0 auto;
+
+  @include large {
+    padding: 0 15px;
+  }
 }

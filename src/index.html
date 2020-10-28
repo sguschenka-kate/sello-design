@@ -21,31 +21,38 @@
           <!-- ./logo -->
 
           <!-- nav -->
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item nav__item--main">
-                <a href="#" class="nav__link nav__link--main nav__link--active"
-                  >Home</a
-                >
-              </li>
-              <li class="nav__item nav__item--main">
-                <a href="#" class="nav__link nav__link--main">Product</a>
-              </li>
-              <li class="nav__item nav__item--main">
-                <a href="#" class="nav__link nav__link--main">Blog</a>
-              </li>
-              <li class="nav__item nav__item--main">
-                <a href="#" class="nav__link nav__link--main">Contact</a>
-              </li>
-            </ul>
-          </nav>
+          <label class="nav-btn-label-wrapper">
+            <!-- <button class="nav-btn" aria-label="Menu button"></button> -->
+            <div class="nav-btn" aria-label="Menu button"></div>
+            <input type="checkbox" class="nav-btn__checkbox" />
+            <nav class="nav">
+              <ul class="nav__list nav__list--main">
+                <li class="nav__item nav__item--main">
+                  <a
+                    href="#"
+                    class="nav__link nav__link--main nav__link--active"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav__item nav__item--main">
+                  <a href="#" class="nav__link nav__link--main">Product</a>
+                </li>
+                <li class="nav__item nav__item--main">
+                  <a href="#" class="nav__link nav__link--main">Blog</a>
+                </li>
+                <li class="nav__item nav__item--main">
+                  <a href="#" class="nav__link nav__link--main">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </label>
           <!-- ./nav -->
         </div>
       </header>
 
       <section class="hero">
         <div class="container row">
-          <div class="col col-70 hero__column--content">
+          <div class="col col-70 col-m-100 hero__column--content">
             <h1 class="hero__title">SALE OFF! UP TO 70%</h1>
             <p class="hero__description">
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -67,9 +74,9 @@
       </section>
 
       <section class="products">
-        <div class="container">
+        <div class="container products__container">
           <nav class="nav--filter">
-            <ul class="nav__list">
+            <ul class="nav__list nav__list--filter">
               <li class="nav__item nav__item--filter">
                 <a
                   href="#"
@@ -171,8 +178,8 @@
       </section>
 
       <section class="recommendations">
-        <div class="container row recommendations__container">
-          <div class="col banner">
+        <div class="container recommendations__container">
+          <div class="banner">
             <img
               src="./img/banner1.jpg"
               alt="Summer sale banner"
@@ -185,7 +192,7 @@
             </div>
           </div>
 
-          <div class="col banner">
+          <div class="banner">
             <img
               src="./img/banner2.jpg"
               alt="Summer sale banner"
@@ -464,7 +471,7 @@
             <li class="articles__item">
               <div class="card card--articles">
                 <img
-                  src="./img/article2.jpg"
+                  src="./img/article1.jpg"
                   alt="The image for the second article"
                   class="card__img"
                 />
@@ -482,7 +489,7 @@
             <li class="articles__item">
               <div class="card card--articles">
                 <img
-                  src="./img/article3.jpg"
+                  src="./img/article1.jpg"
                   alt="The image for the third article"
                   class="card__img"
                 />
@@ -502,28 +509,28 @@
 
       <section class="instagram">
         <div class="instagram__container">
-          <div class="instagram__image-wrapper">
+          <div class="instagram__image-wrapper instagram__image--large">
             <img
               src="./img/insta1.jpg"
               alt="A girl in a coat"
               class="instagram__image"
             />
           </div>
-          <div class="instagram__image-wrapper">
+          <div class="instagram__image-wrapper instagram__image--large">
             <img
               src="./img/insta2.jpg"
               alt="A man in a coat"
               class="instagram__image"
             />
           </div>
-          <div class="instagram__image-wrapper">
+          <div class="instagram__image-wrapper instagram__image--medium">
             <img
               src="./img/insta3.png"
               alt="A girl in jeans"
               class="instagram__image"
             />
           </div>
-          <div class="instagram__image-wrapper">
+          <div class="instagram__image-wrapper instagram__image--medium">
             <img
               src="./img/insta4.jpg"
               alt="A girl in jeans and coat"
@@ -555,10 +562,10 @@
             />
           </div>
 
-          <button class="button button--with-icon instagram__btn">
+          <a href="#" class="button--with-icon instagram__link">
             <i class="fab fa-instagram instagram__btn--icon"></i>
             <span class="instagram__btn--content">Instagram Feed</span>
-          </button>
+          </a>
         </div>
       </section>
 

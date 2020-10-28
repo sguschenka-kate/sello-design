@@ -1,6 +1,10 @@
 .header {
   padding: 17px 0;
   background: #fcfcfc;
+
+  @include large {
+    padding: 10px 0;
+  }
 }
 
 .header__container {
@@ -12,14 +16,8 @@
 .logo__img {
   min-width: 115px; /*was 90px*/
   max-width: 115px;
-}
 
-/* main - navigation */
-
-.nav__item--main:not(:first-child) {
-  margin-left: 15px;
-}
-
-.nav__link--main {
-  @include make-font(13, 18); /* was 8px*/
+  @include large {
+    margin: 0 auto;
+  }
 }
