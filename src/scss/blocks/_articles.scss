@@ -28,3 +28,7 @@
   @include link-button;
   margin-top: 14px;
 }
+
+.articles__link::before {
+  width: 82px;
+}

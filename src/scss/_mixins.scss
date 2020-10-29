@@ -1,4 +1,4 @@
-$smallest-size: 300px;
+$smallest-size: 330px;
 $small-size: 400px;
 $medium-size: 600px;
 $optimal-size: 770px;
@@ -56,6 +56,7 @@ $extra-size: 1014px;
 
 @mixin link-button {
   @include make-font(15, 20);
+  position: relative;
   color: #222;
   display: block;
   text-transform: uppercase;

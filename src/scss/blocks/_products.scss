@@ -16,6 +16,10 @@
   @include link-button;
 }
 
+.products__link--nav::before {
+  width: 105px;
+}
+
 /* navigation - filter */
 
 .nav--filter {

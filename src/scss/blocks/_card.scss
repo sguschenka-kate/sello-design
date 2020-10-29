@@ -2,6 +2,10 @@
   width: 270px;
 }
 
+.card__image-container {
+  position: relative;
+}
+
 .card__list {
   display: flex;
   flex-wrap: wrap;
@@ -17,14 +21,14 @@
 }
 
 .card__price {
-  @include make-font(12, 17); /*was 7px*/
+  @include make-font(13, 17); /*was 7px*/
   font-weight: 300;
   color: #222;
   padding: 7px 0 8px 10px;
 }
 
 .card__price--old {
-  @include make-font(10, 15); /*was 5px*/
+  @include make-font(11, 18); /*was 5px*/
   color: #c7c7c7;
 }
 
@@ -37,10 +41,22 @@
   margin-left: auto;
 }
 
-/* .card__img {
-  position: relative;
-} */
+.card__image-label--articles {
+  @include make-font(12, 24);
+  width: 30px;
+  height: 95px;
+  background: #fff;
+  font-weight: 300;
+  writing-mode: vertical-lr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
 /* .card__type::before {
   display: block;
   width: 35px;
