@@ -1,0 +1,73 @@
+.card {
+  width: 270px;
+}
+
+.card__image-container {
+  position: relative;
+}
+
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__title {
+  @include make-font(17, 22); /*was 12px*/
+  font-weight: 400px;
+  color: #222;
+  padding: 13px 0 0 10px;
+}
+
+.card__price {
+  @include make-font(13, 17); /*was 7px*/
+  font-weight: 300;
+  color: #222;
+  padding: 7px 0 8px 10px;
+}
+
+.card__price--old {
+  @include make-font(11, 18); /*was 5px*/
+  color: #c7c7c7;
+}
+
+.card__description {
+  @include make-font(13, 23); /*was 8px*/
+  font-weight: 300;
+}
+
+.card__options--cart-btn {
+  margin-left: auto;
+}
+
+.card__image-label--articles {
+  @include make-font(12, 24);
+  width: 30px;
+  height: 95px;
+  background: #fff;
+  font-weight: 300;
+  writing-mode: vertical-lr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+/* .card__type::before {
+  display: block;
+  width: 35px;
+  height: 15px;
+  background: #fff;
+  color: #222;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.card__type--tshirt::before {
+  content: "T-Shirt";
+} */

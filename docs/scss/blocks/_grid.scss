@@ -1,0 +1,28 @@
+/* grid */
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex-grow: 1;
+}
+
+.col-70 {
+  max-width: 70%;
+}
+
+.col-m-100 {
+  @include large {
+    max-width: 100%;
+  }
+}
+
+.container {
+  max-width: 850px; /* was 550px */
+  margin: 0 auto;
+
+  @include large {
+    padding: 0 15px;
+  }
+}

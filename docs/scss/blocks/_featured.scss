@@ -1,0 +1,25 @@
+.featured {
+  margin-top: 77px;
+
+  @include large {
+    margin-top: 40px;
+  }
+}
+
+.featured__list {
+  gap: 17px 17px;
+}
+
+.card--featured {
+  border: 0.5px solid #f4f4f4;
+}
+
+.card__options--featured {
+  padding: 5px 4px 0;
+  position: relative;
+  display: flex;
+
+  @include large {
+    z-index: -1;
+  }
+}
