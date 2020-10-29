@@ -12,11 +12,6 @@
     "type": "git",
     "url": "git+https://github.com/sguschenka-kate/sello-design.git"
   },
-  "babel": {
-    "plugins": [
-      "astroturf/plugin"
-    ]
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
