@@ -15,7 +15,7 @@
       <header class="header">
         <div class="container header__container">
           <!-- logo -->
-          <a href="#" class="logo">
+          <a href="#" class="logo" aria-label="Home page">
             <img src="./img/logo.svg" alt="Sello Logo" class="logo__img" />
           </a>
           <!-- ./logo -->
@@ -26,22 +26,41 @@
             <div class="nav-btn" aria-label="Menu button"></div>
             <input type="checkbox" class="nav-btn__checkbox" />
             <nav class="nav">
-              <ul class="nav__list nav__list--main">
+              <ul
+                class="nav__list nav__list--main"
+                aria-label="Navigation list"
+              >
                 <li class="nav__item nav__item--main">
                   <a
                     href="#"
                     class="nav__link nav__link--main nav__link--active"
+                    aria-label="Home"
                     >Home</a
                   >
                 </li>
                 <li class="nav__item nav__item--main">
-                  <a href="#" class="nav__link nav__link--main">Product</a>
+                  <a
+                    href="#"
+                    class="nav__link nav__link--main"
+                    aria-label="Product"
+                    >Product</a
+                  >
                 </li>
                 <li class="nav__item nav__item--main">
-                  <a href="#" class="nav__link nav__link--main">Blog</a>
+                  <a
+                    href="#"
+                    class="nav__link nav__link--main"
+                    aria-label="Blog"
+                    >Blog</a
+                  >
                 </li>
                 <li class="nav__item nav__item--main">
-                  <a href="#" class="nav__link nav__link--main">Contact</a>
+                  <a
+                    href="#"
+                    class="nav__link nav__link--main"
+                    aria-label="Contact"
+                    >Contact</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -60,7 +79,12 @@
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
             </p>
-            <a href="#" class="hero__link red-line">Shop now</a>
+            <a
+              href="#"
+              class="hero__link red-line"
+              aria-label="Shopping page with sale off up to 70%"
+              >Shop now</a
+            >
           </div>
 
           <!-- <div class="hero__column">
@@ -98,7 +122,12 @@
               </li>
             </ul>
 
-            <a href="#" class="products__link--nav red-line">All products</a>
+            <a
+              href="#"
+              class="products__link--nav red-line"
+              aria-label="All products"
+              >All products</a
+            >
           </nav>
 
           <ul class="card__list products__list">
@@ -113,7 +142,7 @@
                     class="card__image"
                   />
                 </div>
-                <h3 class="card__title">Cuffed Beanie</h3>
+                <h4 class="card__title">Cuffed Beanie</h4>
                 <div class="card__price">$10.00</div>
               </div>
             </li>
@@ -129,7 +158,7 @@
                     class="card__image"
                   />
                 </div>
-                <h3 class="card__title">Grey Beanie</h3>
+                <h4 class="card__title">Grey Beanie</h4>
                 <div class="card__price">$15.00</div>
               </div>
             </li>
@@ -145,7 +174,7 @@
                     class="card__image"
                   />
                 </div>
-                <h3 class="card__title">Calvin Klein Sweatpants</h3>
+                <h4 class="card__title">Calvin Klein Sweatpants</h4>
                 <div class="card__price">$36.00</div>
               </div>
             </li>
@@ -161,7 +190,7 @@
                     class="card__image"
                   />
                 </div>
-                <h3 class="card__title">Pink Leather Watch</h3>
+                <h4 class="card__title">Pink Leather Watch</h4>
                 <div class="card__price">$36.00</div>
               </div>
             </li>
@@ -177,7 +206,7 @@
                     class="card__image"
                   />
                 </div>
-                <h3 class="card__title">Cyan Boheme</h3>
+                <h4 class="card__title">Cyan Boheme</h4>
                 <div class="card__price">$36.00</div>
               </div>
             </li>
@@ -193,7 +222,7 @@
                     class="card__image"
                   />
                 </div>
-                <h3 class="card__title">Woleen Tee</h3>
+                <h4 class="card__title">Woleen Tee</h4>
                 <div class="card__price">$36.00</div>
               </div>
             </li>
@@ -212,7 +241,12 @@
             <div class="banner__content banner__content--first">
               <h2 class="banner__title">Summer sale</h2>
               <p class="banner__description">Upto 70% off now</p>
-              <a href="#" class="link-button banner__link red-line">Shop now</a>
+              <a
+                href="#"
+                class="link-button banner__link red-line"
+                aria-label="Shopping page with summer sale"
+                >Shop now</a
+              >
             </div>
           </div>
 
@@ -225,7 +259,12 @@
             <div class="banner__content banner__content--second">
               <h2 class="banner__title">New collection</h2>
               <p class="banner__description">Trending T-Shirt</p>
-              <a href="#" class="link-button banner__link red-line">Shop now</a>
+              <a
+                href="#"
+                class="link-button banner__link red-line"
+                aria-label="Shopping page with new collection"
+                >Shop now</a
+              >
             </div>
           </div>
         </div>
@@ -243,24 +282,27 @@
                     class="card__image"
                   />
                 </div>
-                <h3 class="card__title">Denim Shell Top Ruffle</h3>
+                <h4 class="card__title">Denim Shell Top Ruffle</h4>
                 <div class="card__price">$36.00</div>
                 <div class="card__options--featured grey-line">
-                  <button class="button--icon">
+                  <button class="button--icon" aria-label="Likes">
                     <i
                       class="far fa-heart button--icon-image"
                       aria-hidden="true"
                     ></i>
                     <span class="button--icon-content">1250</span>
                   </button>
-                  <button class="button--icon">
+                  <button class="button--icon" aria-label="Comments">
                     <i
                       class="far fa-comment-alt button--icon-image"
                       aria-hidden="true"
                     ></i>
                     <span class="button--icon-content">1250</span>
                   </button>
-                  <button class="button--icon card__options--cart-btn">
+                  <button
+                    class="button--icon card__options--cart-btn"
+                    aria-label="Add to cart"
+                  >
                     <i
                       class="fas fa-plus button--icon-image"
                       aria-hidden="true"
@@ -279,27 +321,30 @@
                     class="card__image"
                   />
                 </div>
-                <h3 class="card__title">Cluse La Bohème Rose</h3>
+                <h4 class="card__title">Cluse La Bohème Rose</h4>
                 <div class="card__price">
                   $36.00
                   <span class="card__price--old">$45.00</span>
                 </div>
                 <div class="card__options--featured grey-line">
-                  <button class="button--icon">
+                  <button class="button--icon" aria-label="Likes">
                     <i
                       class="far fa-heart button--icon-image"
                       aria-hidden="true"
                     ></i>
                     <span class="button--icon-content">1250</span>
                   </button>
-                  <button class="button--icon">
+                  <button class="button--icon" aria-label="Comments">
                     <i
                       class="far fa-comment-alt button--icon-image"
                       aria-hidden="true"
                     ></i>
                     <span class="button--icon-content">1250</span>
                   </button>
-                  <button class="button--icon card__options--cart-btn">
+                  <button
+                    class="button--icon card__options--cart-btn"
+                    aria-label="Add to cart"
+                  >
                     <i
                       class="fas fa-plus button--icon-image"
                       aria-hidden="true"
@@ -318,24 +363,27 @@
                     class="card__image"
                   />
                 </div>
-                <h3 class="card__title">Asos Ridley High Waist</h3>
+                <h4 class="card__title">Asos Ridley High Waist</h4>
                 <div class="card__price">$36.00</div>
                 <div class="card__options--featured grey-line">
-                  <button class="button--icon">
+                  <button class="button--icon" aria-label="Likes">
                     <i
                       class="far fa-heart button--icon-image"
                       aria-hidden="true"
                     ></i>
                     <span class="button--icon-content">1250</span>
                   </button>
-                  <button class="button--icon">
+                  <button class="button--icon" aria-label="Comments">
                     <i
                       class="far fa-comment-alt button--icon-image"
                       aria-hidden="true"
                     ></i>
                     <span class="button--icon-content">1250</span>
                   </button>
-                  <button class="button--icon card__options--cart-btn">
+                  <button
+                    class="button--icon card__options--cart-btn"
+                    aria-label="Add to cart"
+                  >
                     <i
                       class="fas fa-plus button--icon-image"
                       aria-hidden="true"
@@ -356,24 +404,27 @@
                     class="card__image"
                   />
                 </div>
-                <h3 class="card__title">Analogue Resin Strap</h3>
+                <h4 class="card__title">Analogue Resin Strap</h4>
                 <div class="card__price">$36.00</div>
                 <div class="card__options--featured grey-line">
-                  <button class="button--icon">
+                  <button class="button--icon" aria-label="Likes">
                     <i
                       class="far fa-heart button--icon-image"
                       aria-hidden="true"
                     ></i>
                     <span class="button--icon-content">1250</span>
                   </button>
-                  <button class="button--icon">
+                  <button class="button--icon" aria-label="Comments">
                     <i
                       class="far fa-comment-alt button--icon-image"
                       aria-hidden="true"
                     ></i>
                     <span class="button--icon-content">1250</span>
                   </button>
-                  <button class="button--icon card__options--cart-btn">
+                  <button
+                    class="button--icon card__options--cart-btn"
+                    aria-label="Add to cart"
+                  >
                     <i
                       class="fas fa-plus button--icon-image"
                       aria-hidden="true"
@@ -392,24 +443,27 @@
                     class="card__image"
                   />
                 </div>
-                <h3 class="card__title">Ridley High Waist</h3>
+                <h4 class="card__title">Ridley High Waist</h4>
                 <div class="card__price">$36.00</div>
                 <div class="card__options--featured grey-line">
-                  <button class="button--icon">
+                  <button class="button--icon" aria-label="Likes">
                     <i
                       class="far fa-heart button--icon-image"
                       aria-hidden="true"
                     ></i>
                     <span class="button--icon-content">1250</span>
                   </button>
-                  <button class="button--icon">
+                  <button class="button--icon" aria-label="Comments">
                     <i
                       class="far fa-comment-alt button--icon-image"
                       aria-hidden="true"
                     ></i>
                     <span class="button--icon-content">1250</span>
                   </button>
-                  <button class="button--icon card__options--cart-btn">
+                  <button
+                    class="button--icon card__options--cart-btn"
+                    aria-label="Add to cart"
+                  >
                     <i
                       class="fas fa-plus button--icon-image"
                       aria-hidden="true"
@@ -428,24 +482,27 @@
                     class="card__image"
                   />
                 </div>
-                <h3 class="card__title">Shell Top with Ruffle Front</h3>
+                <h4 class="card__title">Shell Top with Ruffle Front</h4>
                 <div class="card__price">$36.00</div>
                 <div class="card__options--featured grey-line">
-                  <button class="button--icon">
+                  <button class="button--icon" aria-label="Likes">
                     <i
                       class="far fa-heart button--icon-image"
                       aria-hidden="true"
                     ></i>
                     <span class="button--icon-content">1250</span>
                   </button>
-                  <button class="button--icon">
+                  <button class="button--icon" aria-label="Comments">
                     <i
                       class="far fa-comment-alt button--icon-image"
                       aria-hidden="true"
                     ></i>
                     <span class="button--icon-content">1250</span>
                   </button>
-                  <button class="button--icon card__options--cart-btn">
+                  <button
+                    class="button--icon card__options--cart-btn"
+                    aria-label="Add to cart"
+                  >
                     <i
                       class="fas fa-plus button--icon-image"
                       aria-hidden="true"
@@ -472,12 +529,17 @@
           </div>
 
           <div class="subscription__actions">
-            <input
-              type="email"
-              class="subscription__input"
-              placeholder="Enter the email address"
-            />
-            <button class="button--with-icon subscription__btn">
+            <label>
+              <input
+                type="email"
+                class="subscription__input"
+                placeholder="Enter the email address"
+              />
+            </label>
+            <button
+              class="button--with-icon subscription__btn"
+              aria-label="Subscribe"
+            >
               <i class="far fa-paper-plane subscription__btn--icon"></i>
               <span class="subscription__btn--content">Subscribe</span>
             </button>
@@ -487,7 +549,7 @@
 
       <section class="articles">
         <div class="container">
-          <ul class="card__list articles__list">
+          <ul class="card__list articles__list" aria-label="List of articles">
             <li class="articles__item">
               <div class="card card--articles">
                 <div class="card__image-container black-line-left">
@@ -498,14 +560,17 @@
                   />
                   <div class="card__image-label--articles">June 22, 2019</div>
                 </div>
-                <h3 class="card__title articles__title">
+                <h4 class="card__title articles__title">
                   Gallery: The Names of the Slave
-                </h3>
+                </h4>
                 <p class="card__description articles__description">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry.
                 </p>
-                <a href="#" class="link-button articles__link red-line"
+                <a
+                  href="#"
+                  class="link-button articles__link red-line"
+                  aria-label="Read full article 1"
                   >Read more</a
                 >
               </div>
@@ -521,14 +586,17 @@
                   />
                   <div class="card__image-label--articles">June 22, 2019</div>
                 </div>
-                <h3 class="card__title articles__title">
+                <h4 class="card__title articles__title">
                   Gallery: The Names of the Slave
-                </h3>
+                </h4>
                 <p class="card__description articles__description">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry.
                 </p>
-                <a href="#" class="link-button articles__link red-line"
+                <a
+                  href="#"
+                  class="link-button articles__link red-line"
+                  aria-label="Read full article 2"
                   >Read more</a
                 >
               </div>
@@ -544,14 +612,17 @@
                   />
                   <div class="card__image-label--articles">June 22, 2019</div>
                 </div>
-                <h3 class="card__title articles__title">
+                <h4 class="card__title articles__title">
                   Gallery: The Names of the Slave
-                </h3>
+                </h4>
                 <p class="card__description articles__description">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry.
                 </p>
-                <a href="#" class="link-button articles__link red-line"
+                <a
+                  href="#"
+                  class="link-button articles__link red-line"
+                  aria-label="Read full article 2"
                   >Read more</a
                 >
               </div>
@@ -615,7 +686,11 @@
             />
           </div>
 
-          <a href="#" class="button--with-icon instagram__link">
+          <a
+            href="#"
+            class="button--with-icon instagram__link"
+            aria-label="See our instagram page"
+          >
             <i class="fab fa-instagram instagram__btn--icon"></i>
             <span class="instagram__btn--content">Instagram Feed</span>
           </a>
@@ -624,75 +699,213 @@
 
       <section class="categories">
         <div class="container">
-          <ul class="categories__list--large">
+          <ul
+            class="categories__list--large"
+            aria-label="List of all categories"
+          >
             <li class="categories__item--big">
               <h2 class="categories__title">Women</h2>
-              <ul class="categories__list--small">
+              <ul
+                class="categories__list--small"
+                aria-label="List of women categories"
+              >
                 <li class="categories__item--small">
-                  <a href="#" class="categories__link">Dresses</a>
-                  <a href="#" class="categories__link">Blouses</a>
-                  <a href="#" class="categories__link">Swimwear</a>
-                  <a href="#" class="categories__link">Sharee</a>
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Dresses"
+                    >Dresses</a
+                  >
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Blouses"
+                    >Blouses</a
+                  >
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Swimwear"
+                    >Swimwear</a
+                  >
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Sharee"
+                    >Sharee</a
+                  >
                 </li>
               </ul>
             </li>
 
             <li class="categories__item--big">
               <h2 class="categories__title">Men</h2>
-              <ul class="categories__list--small">
+              <ul
+                class="categories__list--small"
+                aria-label="List of men categories"
+              >
                 <li class="categories__item--small">
-                  <a href="#" class="categories__link">Accessories</a>
-                  <a href="#" class="categories__link">T-Shirts</a>
-                  <a href="#" class="categories__link">Jumpers</a>
-                  <a href="#" class="categories__link">Jackets</a>
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Accessories"
+                    >Accessories</a
+                  >
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all T-Shirts"
+                    >T-Shirts</a
+                  >
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Jumpers"
+                    >Jumpers</a
+                  >
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Jackets"
+                    >Jackets</a
+                  >
                 </li>
               </ul>
             </li>
 
             <li class="categories__item--big">
               <h2 class="categories__title">Kids</h2>
-              <ul class="categories__list--small">
+              <ul
+                class="categories__list--small"
+                aria-label="List of kids' categories"
+              >
                 <li class="categories__item--small">
-                  <a href="#" class="categories__link">Shoes</a>
-                  <a href="#" class="categories__link">Accessories</a>
-                  <a href="#" class="categories__link">Blouses</a>
-                  <a href="#" class="categories__link">Shirts</a>
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Shoes"
+                    >Shoes</a
+                  >
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Accessories"
+                    >Accessories</a
+                  >
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Blouses"
+                    >Blouses</a
+                  >
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Shirts"
+                    >Shirts</a
+                  >
                 </li>
               </ul>
             </li>
 
             <li class="categories__item--big">
               <h2 class="categories__title">Toys</h2>
-              <ul class="categories__list--small">
+              <ul
+                class="categories__list--small"
+                aria-label="List of categories of toys"
+              >
                 <li class="categories__item--small">
-                  <a href="#" class="categories__link">Plush</a>
-                  <a href="#" class="categories__link">Teddy</a>
-                  <a href="#" class="categories__link">Cuddly toy</a>
-                  <a href="#" class="categories__link">Kids to</a>
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Plushes"
+                    >Plush</a
+                  >
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Teddies"
+                    >Teddy</a
+                  >
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Cuddly toys"
+                    >Cuddly toy</a
+                  >
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Kids to"
+                    >Kids to</a
+                  >
                 </li>
               </ul>
             </li>
 
             <li class="categories__item--big">
               <h2 class="categories__title">Furniture</h2>
-              <ul class="categories__list--small">
+              <ul
+                class="categories__list--small"
+                aria-label="List of furniture categories"
+              >
                 <li class="categories__item--small">
-                  <a href="#" class="categories__link">Bed</a>
-                  <a href="#" class="categories__link">Chair</a>
-                  <a href="#" class="categories__link">Table</a>
-                  <a href="#" class="categories__link">Dining Table</a>
+                  <a href="#" class="categories__link" aria-label="See all Beds"
+                    >Bed</a
+                  >
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Chairs"
+                    >Chair</a
+                  >
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Tables"
+                    >Table</a
+                  >
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Dining Tables"
+                    >Dining Table</a
+                  >
                 </li>
               </ul>
             </li>
 
             <li class="categories__item--big">
               <h2 class="categories__title">Jewelry</h2>
-              <ul class="categories__list--small">
+              <ul
+                class="categories__list--small"
+                aria-label="List of jewelry categories"
+              >
                 <li class="categories__item--small">
-                  <a href="#" class="categories__link">Goldmine</a>
-                  <a href="#" class="categories__link">Wedding Ring</a>
-                  <a href="#" class="categories__link">Birthday Gift</a>
-                  <a href="#" class="categories__link">Nackless</a>
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Goldmines"
+                    >Goldmine</a
+                  >
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Wedding Rings"
+                    >Wedding Ring</a
+                  >
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all Birthday Gifts"
+                    >Birthday Gift</a
+                  >
+                  <a
+                    href="#"
+                    class="categories__link"
+                    aria-label="See all dresses"
+                    >Nackless</a
+                  >
                 </li>
               </ul>
             </li>
@@ -707,7 +920,7 @@
         <div class="container footer__container--top">
           <div class="footer__column footer__column--address">
             <!-- logo -->
-            <a href="#" class="logo">
+            <a href="#" class="logo" aria-label="Home page">
               <img src="./img/logo.svg" alt="Sello Logo" class="logo__img" />
             </a>
             <!-- ./logo -->
@@ -723,6 +936,7 @@
                   <a
                     href="https://www.google.com/maps/place/184+Main+Rd+E,+St+Albans+VIC+3021,+%D0%90%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D1%8F/@-37.7575498,144.7079744,12z/data=!4m5!3m4!1s0x6ad65fa6debeb781:0xe1d23f5d1759961e!8m2!3d-37.7456227!4d144.8137285"
                     class="address__link"
+                    aria-label="See location on the Google Maps"
                   >
                     184 Main Rd E, St Albans VIC 3021, Australia
                   </a>
@@ -732,7 +946,11 @@
                     class="far fa-envelope address__link--icon"
                     aria-hidden="true"
                   ></i>
-                  <a href="mailto:contact@company.com" class="address__link">
+                  <a
+                    href="mailto:contact@company.com"
+                    class="address__link"
+                    aria-label="Write the email via your mail application"
+                  >
                     contact@company.com
                   </a>
                 </li>
@@ -741,7 +959,11 @@
                     class="fas fa-phone-alt address__link--icon"
                     aria-hidden="true"
                   ></i>
-                  <a href="tel:+0012233456" class="address__link">
+                  <a
+                    href="tel:+0012233456"
+                    class="address__link"
+                    aria-label="Call vie your phone"
+                  >
                     +001 2233 456
                   </a>
                 </li>
@@ -753,27 +975,47 @@
             <div class="social-media">
               <ul class="social-media__list social-media__container">
                 <li class="social-media__list--item">
-                  <a href="#" class="social-media__link">
+                  <a
+                    href="#"
+                    class="social-media__link"
+                    aria-label="See our page on Facebook"
+                  >
                     <i class="fab fa-facebook-f"></i>
                   </a>
                 </li>
                 <li class="social-media__list--item">
-                  <a href="#" class="social-media__link">
+                  <a
+                    href="#"
+                    class="social-media__link"
+                    aria-label="See our page on Twitter"
+                  >
                     <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li class="social-media__list--item">
-                  <a href="#" class="social-media__link">
+                  <a
+                    href="#"
+                    class="social-media__link"
+                    aria-label="See our page on Linkedin"
+                  >
                     <i class="fab fa-linkedin-in"></i>
                   </a>
                 </li>
                 <li class="social-media__list--item">
-                  <a href="#" class="social-media__link">
+                  <a
+                    href="#"
+                    class="social-media__link"
+                    aria-label="See our page on Instagram"
+                  >
                     <i class="fab fa-instagram"></i>
                   </a>
                 </li>
                 <li class="social-media__list--item">
-                  <a href="#" class="social-media__link">
+                  <a
+                    href="#"
+                    class="social-media__link"
+                    aria-label="See our page on Pinterest"
+                  >
                     <i class="fab fa-pinterest-p"></i>
                   </a>
                 </li>
@@ -784,69 +1026,156 @@
           <div class="footer__column footer__column--other">
             <h3 class="footer__column--title">Information</h3>
 
-            <ul class="footer__list">
+            <ul class="footer__list" aria-label="List of Information links">
               <li class="footer__list--item">
-                <a href="#" class="footer__link">About Us</a>
+                <a
+                  href="#"
+                  class="footer__link"
+                  aria-label="See the page About Us"
+                  >About Us</a
+                >
               </li>
               <li class="footer__list--item">
-                <a href="#" class="footer__link">Contact Us</a>
+                <a
+                  href="#"
+                  class="footer__link"
+                  aria-label="See the page Contact Us"
+                  >Contact Us</a
+                >
               </li>
               <li class="footer__list--item">
-                <a href="#" class="footer__link">Terms & Conditions</a>
+                <a
+                  href="#"
+                  class="footer__link"
+                  aria-label="See the page Terms & Conditions"
+                  >Terms & Conditions</a
+                >
               </li>
               <li class="footer__list--item">
-                <a href="#" class="footer__link">Returns & Exchanges</a>
+                <a
+                  href="#"
+                  class="footer__link"
+                  aria-label="See the page Returns & Exchanges"
+                  >Returns & Exchanges</a
+                >
               </li>
               <li class="footer__list--item">
-                <a href="#" class="footer__link">Shipping & Delivery</a>
+                <a
+                  href="#"
+                  class="footer__link"
+                  aria-label="See the page Shipping & Delivery"
+                  >Shipping & Delivery</a
+                >
               </li>
               <li class="footer__list--item">
-                <a href="#" class="footer__link">Privacy Policy</a>
+                <a
+                  href="#"
+                  class="footer__link"
+                  aria-label="See the page Privacy Policy"
+                  >Privacy Policy</a
+                >
               </li>
             </ul>
           </div>
           <div class="footer__column footer__column--other">
             <h3 class="footer__column--title">Quick links</h3>
 
-            <ul class="footer__list">
+            <ul class="footer__list" aria-label="List of Quick links">
               <li class="footer__list--item">
-                <a href="#" class="footer__link">Store Location</a>
+                <a
+                  href="#"
+                  class="footer__link"
+                  aria-label="See the page Store Location"
+                  >Store Location</a
+                >
               </li>
               <li class="footer__list--item">
-                <a href="#" class="footer__link">My Account</a>
+                <a
+                  href="#"
+                  class="footer__link"
+                  aria-label="See the page My Account"
+                  >My Account</a
+                >
               </li>
               <li class="footer__list--item">
-                <a href="#" class="footer__link">Orders Tracking</a>
+                <a
+                  href="#"
+                  class="footer__link"
+                  aria-label="See the page Orders Tracking"
+                  >Orders Tracking</a
+                >
               </li>
               <li class="footer__list--item">
-                <a href="#" class="footer__link">Size Guide</a>
+                <a
+                  href="#"
+                  class="footer__link"
+                  aria-label="See the page Size Guide"
+                  >Size Guide</a
+                >
               </li>
               <li class="footer__list--item">
-                <a href="#" class="footer__link">Faqs</a>
+                <a href="#" class="footer__link" aria-label="See the page Faqs"
+                  >Faqs</a
+                >
               </li>
             </ul>
           </div>
           <div class="footer__column footer__column--other">
-            <h3 class="footer__column--title">Payment</h3>
+            <h3
+              class="footer__column--title"
+              aria-label="List of Payment info links"
+            >
+              Payment
+            </h3>
 
             <ul class="footer__list">
               <li class="footer__list--item">
-                <a href="#" class="footer__link">Account</a>
+                <a
+                  href="#"
+                  class="footer__link"
+                  aria-label="See the page Account"
+                  >Account</a
+                >
               </li>
               <li class="footer__list--item">
-                <a href="#" class="footer__link">Free Shipping</a>
+                <a
+                  href="#"
+                  class="footer__link"
+                  aria-label="See the page Free Shipping"
+                  >Free Shipping</a
+                >
               </li>
               <li class="footer__list--item">
-                <a href="#" class="footer__link">Support 24/7</a>
+                <a
+                  href="#"
+                  class="footer__link"
+                  aria-label="See the page Support 24/7"
+                  >Support 24/7</a
+                >
               </li>
               <li class="footer__list--item">
-                <a href="#" class="footer__link">30 Days Product Returns</a>
+                <a
+                  href="#"
+                  class="footer__link"
+                  aria-label="See the page 30 Days Product Returns"
+                  >30 Days Product Returns</a
+                >
               </li>
               <li class="footer__list--item">
-                <a href="#" class="footer__link">100% Payment Secure</a>
+                <a
+                  href="#"
+                  class="footer__link"
+                  aria-label="See the page 100% Payment Secure"
+                  >100% Payment Secure</a
+                >
               </li>
               <li class="footer__list--item">
-                <a href="#" class="footer__link">Supported All Cards</a>
+                <a
+                  href="#"
+                  class="footer__link"
+                  aria-label="See the page Supported All Cards"
+                  >Supported All Cards</a
+                >
               </li>
             </ul>
           </div>
